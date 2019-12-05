@@ -45,7 +45,7 @@ module.exports = (env, argv) => {
      * Tell webpack what directories should be searched when resolving modules.
      */
     resolve: {
-      modules: [path.join(__dirname, 'src'),  'node_modules'],
+      modules: [path.join(__dirname, 'src'),  'node_modules', path.join(__dirname, 'src', 'components', 'external')],
       extensions: ['.js', '.ts']
     },
 
